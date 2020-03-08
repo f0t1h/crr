@@ -93,14 +93,15 @@ class ascii_art_o{
         std::cout << frame->header[1] << "\n";
         std::cout << "^\n";
         for(int i = y_max-1; i>0;i--){
-            std::cout << "|";
+            std::cout << "│";
             for(int j =1; j<x_max;j++){
                 std::cout << (mx[j][i] ? "o" : " ");
             }
             std::cout << "\n";
         }
+        std::cout << "└";
         for(int j =0; j<x_max;j++){
-            std::cout << "-";
+            std::cout << "─";
         }
         std::cout << "> " << frame->header[0] << "\n";
     }
