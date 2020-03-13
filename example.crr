@@ -1,3 +1,0 @@
-library(ggplot)
-ggplot(dataframe(args[1])) + ascii_art()
-exit(0)
